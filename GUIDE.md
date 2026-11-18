@@ -58,7 +58,7 @@ Each module ends with a comprehensive exercise covering that module's concepts. 
 | Module | Inappropriate/appropriate comparisons | Final answer comparison |
 |---|---|---|
 | 1 | Satisfaction versus adoption; AI self-approval versus human checking | [Reviewed communications claims](modules/Module01.md#compare-after-completing) |
-| 2 | Predetermined conclusion versus balanced brief; typed name versus selected Skill and attached evidence | [Intake and outline](modules/Module02.md#compare-after-completing) |
+| 2 | Balanced brief; selected Skill and supplied evidence; explicit Markdown template versus vague formatting | [Intake and outline](modules/Module02.md#compare-after-completing) |
 | 3 | Averaged percentages versus weighted rate; invented cash/commitments versus qualified facts/proposals | [Calculations and report](modules/Module03.md#compare-after-completing) |
 | 4 | Proofreading versus evidence audit; preferred count versus unresolved source conflict | [Error key and review record](modules/Module04.md#compare-after-completing) |
 | 5 | Misleading savings title versus qualified headline; distorted chart versus honest comparison | [Three-slide storyboard](modules/Module05.md#compare-after-completing) |
@@ -112,13 +112,13 @@ Participants and instructor use the same handout. Read the short concepts, compa
 
 ### Module 2 — Structured Prompting, 35 minutes
 
-**Teaching:** Task, audience, sources, constraints, format, and verification. Demonstrate a weak prompt, an improved prompt, and a reusable Skill workflow.
+**Teaching:** Task, audience, sources, constraints, format, and verification. Include simple Markdown headings, emphasis, lists, tables, and review checkboxes; distinguish a rendered report from a raw reusable template. Demonstrate prompt improvements, the supplied formatting example, and Skill selection within the existing seven-minute demonstration.
 
-**Final exercise 2, 15 minutes:** Organize S1–S5 into the four context parts (3 minutes), create/reuse and reference a Skill or use ordinary instructions and run intake (5), check intake and request the outline (4), then peer-review and save INTAKE-v1 (3). Full instructions and creation prompt are in [Module 2](modules/Module02.md#final-exercise--build-and-run-a-reporting-brief).
+**Final exercise 2, 15 minutes:** Organize S1–S5 into the four context parts (3 minutes), create/reuse and reference a Skill or use ordinary instructions and run intake (5), check intake and create the Markdown report outline TEMPLATE-v1 (4), then peer-review formatting and save the outputs (3). Full instructions and creation prompt are in [Module 2](modules/Module02.md#final-exercise--build-and-run-a-reporting-brief).
 
 **Success check:** All six prompt components and four context labels appear; the source inventory matches the supplied packet. The outline preserves the synthetic label and distinguishes facts from proposals. The Skill or fallback flags missing evidence and retains human review.
 
-**Handoff:** Save the packet, prompt, and outline before the 20-minute break. Do not let setup overrun 2:55.
+**Handoff:** Save the packet, prompt, INTAKE-v1, and Markdown outline TEMPLATE-v1 before the 20-minute break. Do not let setup overrun 2:55.
 
 ### Module 3 — Analysis and Drafting, 35 minutes
 
@@ -200,6 +200,12 @@ The first line illustrates the selected mention. Merely pasting the name does no
 [Module 3's reference cards](modules/Module03.md#reference-cards--transfer-the-workflow-to-other-use-cases) contain reusable rules, synthetic input packets, explicit Skill-reference examples, expected calculations, next-stage prompts, and human gates for the three additional use cases. They need no participant data to rehearse later. Create only the PPI Skill during the timed workshop; other Skill creation is take-home practice.
 
 For recurring use, follow [Module 5's next-period restart](modules/Module05.md#take-home-reference--restart-the-workflow-next-reporting-period). Reuse the method, supply fresh evidence, and reset approval status. The workflow does not automatically schedule itself or distribute reports.
+
+## Optional advanced challenge: evidence before execution
+
+[Module 2's context-check challenge](modules/Module02.md#advanced-challenge--require-appropriate-evidence-before-running) provides a Skill modification prompt and six tests: an empty request, palette-only evidence, an inaccessible filename, pressure to invent results, a valid synthetic source card, and a partially complete source card. The expected behavior is to stop unsupported work, explain the specific gap, and let the user supply context and select the next stage.
+
+Use this as take-home work or instead of the existing intermediate extension, not an additional timed activity. Record actual results; the materials do not install or test a Skill in participants' accounts. Passing the context check does not establish factual accuracy or human approval.
 
 ## Contingencies and time control
 
