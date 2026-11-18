@@ -205,6 +205,8 @@ For recurring use, follow [Module 5's next-period restart](modules/Module05.md#t
 
 Module 2 now supplies the [complete baseline Skill](modules/Module02.md#baseline-skill--exact-content-to-paste) and ordered manual edits: stored Markdown conventions; replacement rules for PowerPoint/PDF selection and generation; saved palette/image guidance; and the evidence check. Participants copy Skill content directly into their editable instructions rather than asking the model to interpret an update request. Keep any editor-managed metadata outside the instructions body.
 
+Each edit includes a short usage test and observable success criteria. Participants reuse S1–S5, compare saved outputs, test fresh-conversation palette persistence, and record missing-evidence refusal plus recovery in the evolution table. Edits A/B/C of the file-output addition are saved together before their behavior is tested.
+
 Use the baseline and Markdown addition during core practice if Skills are enabled. The file-output, palette, and evidence extensions are take-home/reference work or replace an existing optional extension; they add no required workshop minutes. The handout does not install or update an account's Skill. Participants must save their edits and run the supplied tests themselves.
 
 ## Optional advanced challenge: evidence before execution

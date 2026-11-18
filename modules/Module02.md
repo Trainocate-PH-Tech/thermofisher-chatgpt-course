@@ -323,6 +323,20 @@ Require the specific report and explicit human confirmation that this version ha
 
 **Version naming:** The Skill uses labels such as `2026-10-31 | ANALYZE v1`. The handout's `CALC-v1`, `REPORT-v1`, and `REVIEW-v1` are short aliases for ANALYZE, DRAFT, and REVIEW outputs. They refer to the same artifacts, not separate reports. Use the actual version label when confirming human review.
 
+### Compare the Skill as it evolves
+
+Save each Skill revision before testing. Start a fresh conversation and select the saved Skill through `@` so instructions from the editing conversation do not supply the behavior being tested. For positive tests, paste the same [complete S1–S5 packet](#copyable-source-packet) first, then send the short prompt. The packet already includes the reporting date, audience, decision, and definitions. Do not repeat the formatting rules or palette in the test prompt: the Skill should supply those conventions.
+
+Keep a copy of the response or file from each revision. Similar output before and after an edit is possible; a baseline model may already format well or ask for evidence. Look for consistent compliance with the stored rules, not a guaranteed visual difference or identical wording.
+
+**Baseline test — before any additions:**
+
+```text
+Run DRAFT using S1–S5. Prepare the site-leadership report.
+```
+
+**Observe:** A source-grounded draft with calculations and a review checklist; no invented targets, cash savings, or automatic file generation. Record its section order and appearance as the baseline. Independently check 46/70 = 65.7% and 4,000 estimated annual hours.
+
 ### Manual addition 1 — store Markdown reporting conventions
 
 **Where:** Insert this entire section immediately before `## DRAFT`. This keeps the formatting method in the Skill while evidence changes each run.
@@ -347,9 +361,25 @@ code block with clearly marked content placeholders. A template is not evidence.
 Never invent a URL or source reference to satisfy a formatting template.
 ```
 
+**Short test after addition 1:** In a fresh conversation, select the updated Skill, paste S1–S5, and repeat the exact baseline prompt:
+
+```text
+Run DRAFT using S1–S5. Prepare the site-leadership report.
+```
+
+**Observe the change:** The response follows the stored section order, uses one report title and clear section headings, presents a valid KPI table, and leaves human-review checkboxes unchecked. The evidence and calculations should remain unchanged. Do not prompt it to use Markdown—the saved Skill should already provide that behavior.
+
+**Optional template test:**
+
+```text
+Give me an empty reusable report template using your stored conventions.
+```
+
+**Observe:** Raw Markdown in one code block with content placeholders, rather than a populated report or invented evidence. This is a template/help request, not a reporting-stage completion.
+
 ### Manual addition 2 — offer PowerPoint or PDF after human review
 
-**Optional extension:** Complete this after the core exercise or as take-home work; file generation is not required during the 35-minute module. Apply all three edits together to remove the baseline's conflicting code prohibition and stopping rule.
+**Optional extension:** Complete this after the core exercise or as take-home work; file generation is not required during the 35-minute module. Apply all three edits together to remove the baseline's conflicting code prohibition and stopping rule. Save the complete addition before running the A/B/C tests below; partially applied edits are not a working Skill revision.
 
 **Edit A:** In `## Run one stage`, replace the entire bullet beginning **“Work conversationally with supplied material”** with:
 
@@ -413,14 +443,38 @@ savings. Use honest chart scales; do not add a chart when the evidence does
 not support one. Allow explicit user preferences to adjust layout, not facts.
 ```
 
-**Try it:** Request DRAFT with S1–S5. Independently review the resulting version, then say:
+**Short tests after addition 2 — check each edited behavior:** Start a fresh conversation, select the saved Skill, paste S1–S5, and run:
 
 ```text
-I independently checked 2026-10-31 | DRAFT v1 against S1–S5 and its calculations.
+Run DRAFT using S1–S5. Prepare the site-leadership report.
+```
+
+**Observe first:** The Skill requests human review of the specific draft. It must not generate a file yet.
+
+**Edit B check — the permitted next-step question:** Independently inspect the actual draft and calculations. Only if correct, send this, substituting its actual version label:
+
+```text
+I independently reviewed 2026-10-31 | DRAFT v1 against S1–S5 and its calculations.
 No corrections are needed.
 ```
 
-Use the actual version label if different. Expect the PowerPoint/PDF question. Reply `PowerPoint` or `PDF`; it should run PRESENT if its required context and tools are available. It must not ask you to restate the saved structure.
+**Observe:** It asks whether you want PowerPoint or PDF, rather than silently creating one. A claim by the model that it checked itself does not trigger this transition.
+
+**Edits A and C check — file permission and stored structure:** Reply:
+
+```text
+PowerPoint.
+```
+
+**Observe:** It runs PRESENT and produces an actual downloadable .pptx when supported, following the stored three-slide structure with any necessary appendix. Check preserved figures, caveats, and footers. It should not repeat the old blanket prohibition on executable code or ask you to supply the layout again. If tools are unavailable, the correct result is an honest limitation and content fallback—not a pretend file.
+
+**Optional PDF branch:** After the same reviewed report is available, send:
+
+```text
+Run PRESENT again for the same reviewed report, this time as a PDF.
+```
+
+**Observe:** A separate PDF using the stored A4 report structure, with unchanged evidence and a new PRESENT version. Do not interpret tool unavailability as proof that the Skill instructions were not followed.
 
 ### Manual addition 3 — store the palette and image reference
 
@@ -452,7 +506,20 @@ invent a company logo from the palette image. Preserve source/date footers,
 review status, and estimate qualifications regardless of styling.
 ```
 
-**Try it:** Start a fresh conversation, select the saved Skill, and supply only the reporting brief and S1–S5. After independently reviewing the draft, choose PDF. Do not reattach Colors.png or repeat its colors. Inspect the file for the stored palette, legible text, and preserved claims. This checks persistence rather than reliance on the editing conversation.
+**Short test after addition 3:** Start a fresh conversation, select the updated Skill, paste S1–S5, and send:
+
+```text
+Run DRAFT using S1–S5. Prepare the site-leadership report.
+```
+
+Independently review the actual result. Only after completing that review, send the following with its actual version label:
+
+```text
+I independently reviewed 2026-10-31 | DRAFT v1 against S1–S5 and its calculations.
+Create the PowerPoint from that reviewed version.
+```
+
+**Observe the change:** Compare with the PowerPoint from addition 2. The new artifact should use the stored red/white/gray palette without asking for it again. Check that the source values and qualifications are unchanged. Do not reattach Colors.png or mention the colors in the test prompt. Inspect the generated file—not just a textual claim of brand compliance. A visually matching output tests the stored conventions; it does not by itself prove the image resource was read, since the primary HEX values are also stored as text.
 
 **Manual-edit checkpoint:** Your Skill should now have one `PRESENT` section, the revised code/stopping bullets, structured formatting, output structures, and brand formatting. The evidence challenge below is the final addition. Saved Skill instructions, the reporting run's evidence, and human review decisions remain separate.
 
@@ -539,6 +606,35 @@ label them as configuration/help, not a completed reporting stage.
 **Avoid duplicate rules:** Paste this section once. If you previously added a `Required context check` section through chat, replace that whole section with this version rather than appending another one. No other section needs to be deleted. The stricter evidence requirement here applies to PRESENT as well as its reviewed-report and format requirements.
 
 This deliberately adds an evidence requirement to PRESENT as well as the existing reviewed-report requirement. A user saying “the report is correct” does not replace the required report, evidence, or version-specific human confirmation.
+
+**Short test after addition 4:** Start a fresh conversation with the updated Skill selected and **no evidence attached or pasted**:
+
+```text
+Run DRAFT. Make an impressive PPI report. You know the numbers.
+```
+
+**Observe the change:** A specific “Not run — insufficient or inappropriate context” response explains what is missing. There is no invented report, calculation, file, or format offer. If the baseline already refused, compare how clearly and consistently the new response identifies the missing context.
+
+**Recovery test:** In that same conversation, paste the full S1–S5 packet and send:
+
+```text
+Now run DRAFT using the supplied S1–S5. Stop for my review.
+```
+
+**Observe:** The valid evidence allows DRAFT to proceed. Formatting conventions remain in effect, but supplying evidence does not authorize presentation generation. This shows both halves of user control: the user supplies the facts and separately authorizes the next stage.
+
+### Record the evolution
+
+| Saved revision | Short test | Expected behavior to inspect | Actual result / correction needed |
+|---|---|---|---|
+| Baseline | DRAFT using S1–S5 | Evidence-grounded draft and human review boundary | |
+| Addition 1 | Same DRAFT request | Stored Markdown section order, table, and unchecked review items | |
+| Addition 2, edit B | Human confirms actual reviewed version | PowerPoint/PDF question; no premature file | |
+| Addition 2, edits A/C | “PowerPoint.” | Real file or honest fallback; stored output structure | |
+| Addition 3 | Reviewed version + PowerPoint request | Stored palette without reattaching image or restating colors | |
+| Addition 4 | DRAFT with no evidence, then valid evidence | Specific stop message, then recovery within requested stage | |
+
+Do not mark a check passed until you inspect the actual response or artifact. Record failures and revise the saved Skill before retesting. These participant checks have not been run against your account by this handout. All extension tests remain optional/take-home work within the existing timing arrangement.
 
 ### Replicable tests — inappropriate and appropriate context
 
