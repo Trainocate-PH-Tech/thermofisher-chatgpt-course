@@ -201,9 +201,15 @@ The first line illustrates the selected mention. Merely pasting the name does no
 
 For recurring use, follow [Module 5's next-period restart](modules/Module05.md#take-home-reference--restart-the-workflow-next-reporting-period). Reuse the method, supply fresh evidence, and reset approval status. The workflow does not automatically schedule itself or distribute reports.
 
+## Manual Skill editing reference
+
+Module 2 now supplies the [complete baseline Skill](modules/Module02.md#baseline-skill--exact-content-to-paste) and ordered manual edits: stored Markdown conventions; replacement rules for PowerPoint/PDF selection and generation; saved palette/image guidance; and the evidence check. Participants copy Skill content directly into their editable instructions rather than asking the model to interpret an update request. Keep any editor-managed metadata outside the instructions body.
+
+Use the baseline and Markdown addition during core practice if Skills are enabled. The file-output, palette, and evidence extensions are take-home/reference work or replace an existing optional extension; they add no required workshop minutes. The handout does not install or update an account's Skill. Participants must save their edits and run the supplied tests themselves.
+
 ## Optional advanced challenge: evidence before execution
 
-[Module 2's context-check challenge](modules/Module02.md#advanced-challenge--require-appropriate-evidence-before-running) provides a Skill modification prompt and six tests: an empty request, palette-only evidence, an inaccessible filename, pressure to invent results, a valid synthetic source card, and a partially complete source card. The expected behavior is to stop unsupported work, explain the specific gap, and let the user supply context and select the next stage.
+[Module 2's context-check challenge](modules/Module02.md#advanced-challenge--require-appropriate-evidence-before-running) provides an exact context-check section to paste into the Skill and six tests: an empty request, palette-only evidence, an inaccessible filename, pressure to invent results, a valid synthetic source card, and a partially complete source card. The expected behavior is to stop unsupported work, explain the specific gap, and let the user supply context and select the next stage.
 
 Use this as take-home work or instead of the existing intermediate extension, not an additional timed activity. Record actual results; the materials do not install or test a Skill in participants' accounts. Passing the context check does not establish factual accuracy or human approval.
 
