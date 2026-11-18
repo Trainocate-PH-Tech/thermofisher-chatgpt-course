@@ -1,0 +1,25 @@
+# Operating system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Local editor settings and temporary files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Microsoft Office and LibreOffice lock files
+~$*
+.~lock.*#
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.tmp
+*.temp
