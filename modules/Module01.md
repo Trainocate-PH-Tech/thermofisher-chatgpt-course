@@ -1,23 +1,15 @@
 # Module 1 — The Human-in-the-Loop Approach
 
-**Shared instructor–participant handout**  
-**Time:** 2:05–2:20 PM · **Duration:** 15 minutes  
+**Workshop handout**  
 [Guide](../GUIDE.md) · [Next](Module02.md)
 
-## Purpose and timing
+## What you will learn
 
-Learn to distinguish evidence from inference, assign human review responsibilities, and correct misleading claims. You need ChatGPT or the printed examples and a calculator. You will produce three reviewed statements.
-
-| Clock | Minutes | Work |
-|---|---:|---|
-| 2:05–2:10 | 5 | Read the concepts and workflow |
-| 2:10–2:13 | 3 | Walk through the examples |
-| 2:13–2:18 | 5 | Complete the final exercise |
-| 2:18–2:20 | 2 | Compare answers and hand off |
+Learn to separate facts from assumptions, decide what a person must check, and correct misleading claims. You need ChatGPT or the printed examples and a calculator. You will produce three reviewed statements.
 
 ## Key concepts
 
-Human-in-the-loop (HITL) means people remain responsible for the question, evidence, verification, and release decision. ChatGPT can organize, calculate, draft, and suggest corrections. Fluent wording is not evidence that a claim is correct.
+Human-in-the-loop (HITL) means a person decides what to ask, checks the evidence and results, and decides what can be shared. ChatGPT can organize, calculate, draft, and suggest corrections. An answer can sound convincing and still be wrong.
 
 | Reporting standard | Your review question | Evidence of completion |
 |---|---|---|
@@ -25,7 +17,7 @@ Human-in-the-loop (HITL) means people remain responsible for the question, evide
 | Easy to Understand | Is the message and decision clear? | Plain language and qualified, labeled measures |
 | Free from Errors | Have I checked facts, logic, numbers, language, and presentation? | Review checklist and named human reviewer |
 
-“Free from Errors” is a review standard, not a guarantee from the model. A second AI response is not independent evidence. Inspect sources and recompute important figures yourself.
+“Free from Errors” is a review standard, not a guarantee from the model. A second AI response is not independent evidence. Check sources and recompute important figures yourself.
 
 ## Worked examples
 
@@ -73,7 +65,7 @@ Show the formula, correct the claim, and list the human check required.
 Do not mark it approved. Leave a blank for the human reviewer's decision.
 ```
 
-**Expected result:** 90/120 × 100 = 75.0%. The reviewer independently checks the division and the meaning of “unique opens,” then records their decision.
+**Expected result:** 90/120 × 100 = 75.0%. The reviewer checks the division themselves and the meaning of “unique opens,” then records their decision.
 
 ## Workflow instructions
 
@@ -88,13 +80,10 @@ Use `brief + evidence → intake → calculations → draft → human review →
 
 These labels organize a message; they are not ChatGPT commands. A Skill can store reusable RULES, but current SOURCES still need to be supplied. Module 2 explains how to select a Skill. An earlier AI draft must not become evidence merely because it is in the conversation.
 
-**Instructor tip:** Ask participants which claims they would check first. Spend the existing five-minute teaching block on these concepts, rather than reading every sentence aloud.
-
 ## Final exercise — review a communications update
 
 **Scenario:** A communications manager wants to brief leadership on newsletter engagement. Work in pairs: one operator uses ChatGPT; the reviewer checks sources and arithmetic.
 
-**Time:** 5 minutes practice + 2 minutes comparison.  
 **Deliverable:** Three corrected claims, their source references, and a human review record.
 
 ### Inputs and sample prompt
@@ -126,15 +115,15 @@ Do not claim human approval or distribute the result.
 
 ### Steps
 
-1. **1 minute:** Classify the claims before running the prompt.
-2. **2 minutes:** Run it and inspect the suggested corrections.
-3. **1 minute:** Independently calculate the two rates and their difference.
-4. **1 minute:** Agree the corrected wording and complete a review record.
+1. Classify the claims before running the prompt.
+2. Run it and check the suggested corrections.
+3. Independently calculate the two rates and their difference.
+4. Agree the corrected wording and complete a review record.
 
 ### Success checklist
 
 - [ ] All three claims have a source reference and a justified decision.
-- [ ] Rates and percentage-point change are independently checked.
+- [ ] Rates and percentage-point change have been checked by a person.
 - [ ] No unsupported productivity claim remains.
 - [ ] A person records the review decision.
 
@@ -148,6 +137,4 @@ Do not claim human approval or distribute the result.
 
 Review record: **Reviewer ____ · Calculation checked ____ · Correction ____ · Decision ____**.
 
-**Instructor tip:** Use the two-minute comparison to discuss the denominator and unsupported causal claim. If access fails, review the printed examples. Stop at 2:20.
-
-**Handoff:** Bring the evidence/claim distinction into Module 2. Optional challenge within the same time: name the evidence needed to investigate a productivity effect.
+**Handoff:** Bring the evidence/claim distinction into Module 2. Optional challenge: name the evidence needed to investigate a productivity effect.

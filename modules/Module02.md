@@ -1,30 +1,22 @@
 # Module 2 — Structured Prompting for Reports and Presentations
 
-**Shared instructor–participant handout**  
-**Time:** 2:20–2:55 PM · **Duration:** 35 minutes  
+**Workshop handout**  
 [Guide](../GUIDE.md) · [Previous](Module01.md) · [Next](Module03.md)
 
-## Purpose and timing
+## What you will learn
 
 Learn to organize context, write a six-part reporting brief, format readable reports using simple Markdown, and reference a reusable Skill or equivalent instructions. You need this handout and ChatGPT; Skills are optional. You will produce INTAKE-v1 and a reusable Markdown report outline.
 
-| Clock | Minutes | Work |
-|---|---:|---|
-| 2:20–2:28 | 8 | Context/source briefing (5 min) and Markdown basics (3 min) |
-| 2:28–2:35 | 7 | Prompt comparisons (2 min), formatting example (2 min), Skill demonstration (3 min) |
-| 2:35–2:50 | 15 | Complete the final exercise |
-| 2:50–2:55 | 5 | Compare answers, save, and prepare for break |
-
 ## Key concepts
 
-A useful reporting prompt specifies **task, audience, sources, constraints, format, and verification**. Calling ChatGPT an expert does not supply missing evidence. Ask for formulas and source references you can inspect.
+A useful reporting prompt specifies **task, audience, sources, constraints, format, and verification**. Calling ChatGPT an expert does not supply missing evidence. Ask for formulas and source references you can check.
 
 Organize the brief into four context parts:
 
 | Label | What belongs here | Update pattern |
 |---|---|---|
 | BRIEF | Task, audience, decision, period, stage | Each reporting run |
-| RULES | Definitions, format, human review gates | Reusable instructions or Skill |
+| RULES | Definitions, format, human review steps | Reusable instructions or Skill |
 | SOURCES | Dated evidence and source IDs | Fresh evidence each run |
 | OUTPUTS | Calculations, drafts, review records | Named versions |
 
@@ -32,7 +24,7 @@ S1/S3/S4 below are evidence, S2 defines measures, and S5 gives reporting rules. 
 
 ## Simple Markdown for readable reports
 
-Markdown uses ordinary text characters to describe structure. You can type it in a plain-text editor and still read the content; a Markdown-aware viewer renders headings, emphasis, lists, and tables. This is useful for giving ChatGPT an exact report template instead of asking it to “make it professional.” Rendering can vary when pasted into email, Word, or other tools, so inspect the final destination.
+Markdown uses ordinary text characters to describe structure. You can type it in a plain-text editor and still read the content; a Markdown-aware viewer renders headings, emphasis, lists, and tables. This is useful for giving ChatGPT an exact report template instead of asking it to “make it professional.” Rendering can vary when pasted into email, Word, or other tools, so check the final destination.
 
 ### Notation quick reference
 
@@ -82,8 +74,6 @@ For a **readable report**, ask: “Return rendered Markdown, without wrapping th
 
 Square-bracket placeholders such as `[Write the summary here]` are instructions for a future author, not evidence, citations, or clickable links. In this workshop, “Source: S4” refers to the supplied packet. Do not turn it into a fabricated web citation.
 
-**Instructor tip:** In the three-minute basics segment, demonstrate `#`, `##`, `**bold**`, a bullet, and a table separator. Treat the remaining notation as a reference participants can consult during the final exercise.
-
 ## Common workshop source packet
 
 The department categories reflect the supplied deck's PPI use cases (slides 9 and 13–16), but all values below are invented. Modules 2–5 use this same packet. Copy everything inside the following block, including definitions and notes.
@@ -92,7 +82,7 @@ The department categories reflect the supplied deck's PPI use cases (slides 9 an
 
 ```text
 SYNTHETIC WORKSHOP DATA — NOT THERMO FISHER RESULTS
-Case: Manila PPI portfolio update for a 10-minute site leadership discussion.
+Case: Manila PPI portfolio update for a site leadership discussion.
 Reporting snapshot: 31 October 2026. All current figures below are cumulative
 portfolio figures at that date, not the number completed during October.
 Decision: which follow-up work should leadership prioritize next month?
@@ -168,7 +158,7 @@ interpretations, and proposed actions. Do not draft the report yet.
 
 **Why it fails:** A typed name does not prove Skill invocation, a filename does not grant file access, and approval belongs to a person.
 
-**Appropriate approach:** Select the installed Skill with `@`, paste S1–S5, and request INTAKE only. The final exercise provides the complete prompt. Expected behavior is a source inventory and questions, not an assertion of access to an absent file.
+**Appropriate approach:** Select the installed Skill with `@`, paste S1–S5, and request INTAKE only. The final exercise provides the complete prompt. Expected behavior is a source list and questions, not an assertion of access to an absent file.
 
 ### Example 3 — Give a report template instead of vague formatting instructions
 
@@ -255,15 +245,15 @@ Use run label **PPI-2026-10-v1** throughout the workshop. Labels such as INTAKE-
 
 | Stage | Output | Human gate before proceeding |
 |---|---|---|
-| INTAKE | INTAKE-v1: source inventory, gaps, outline | Check scope and evidence |
-| ANALYZE | CALC-v1: formulas and results | Independently check arithmetic |
-| DRAFT | REPORT-v1 | Inspect narrative against sources |
+| INTAKE | INTAKE-v1: source list, gaps, outline | Check scope and evidence |
+| ANALYZE | CALC-v1: formulas and results | Check the arithmetic yourself |
+| DRAFT | REPORT-v1 | Check narrative against sources |
 | REVIEW | REVIEW-v1 and corrected REPORT-v2 | Record human decision |
 | PRESENT | STORYBOARD-v1 | Check transformed claims and visuals |
 
 ### Create or reuse the reporting Skill
 
-**Product guidance checked 18 November 2026:** OpenAI documents Skills for eligible Enterprise users, subject to workspace settings. Interface availability varies; confirm it before class. In supported interfaces, use **Plugins → Skills → Create → Create with chat**, or ask ChatGPT to create a Skill. Supported ChatGPT Work surfaces also document `@skill-creator`. See [Skills in ChatGPT](https://help.openai.com/en/articles/20001066-skills-in-chatgpt) and [Build skills](https://learn.chatgpt.com/docs/build-skills).
+**Product guidance checked 18 November 2026:** OpenAI documents Skills for eligible Enterprise users, subject to workspace settings. Available features depend on your account and workspace. In supported interfaces, use **Plugins → Skills → Create → Create with chat**, or ask ChatGPT to create a Skill. Supported ChatGPT Work surfaces also document `@skill-creator`. See [Skills in ChatGPT](https://help.openai.com/en/articles/20001066-skills-in-chatgpt) and [Build skills](https://learn.chatgpt.com/docs/build-skills).
 
 ### Baseline Skill — exact content to paste
 
@@ -321,7 +311,7 @@ Require the specific report and explicit human confirmation that this version ha
 - If S1 and S2 disagree on the completed count, show both counts with their source IDs and ask which applies to the report scope and period. Withhold the affected completion rate until resolved.
 ```
 
-**Version naming:** The Skill uses labels such as `2026-10-31 | ANALYZE v1`. The handout's `CALC-v1`, `REPORT-v1`, and `REVIEW-v1` are short aliases for ANALYZE, DRAFT, and REVIEW outputs. They refer to the same artifacts, not separate reports. Use the actual version label when confirming human review.
+**Version naming:** The Skill uses labels such as `2026-10-31 | ANALYZE v1`. The handout's `CALC-v1`, `REPORT-v1`, and `REVIEW-v1` are short aliases for ANALYZE, DRAFT, and REVIEW outputs. They refer to the same outputs, not separate reports. Use the actual version label when confirming human review.
 
 ### Compare the Skill as it evolves
 
@@ -335,7 +325,7 @@ Keep a copy of the response or file from each revision. Similar output before an
 Run DRAFT using S1–S5. Prepare the site-leadership report.
 ```
 
-**Observe:** A source-grounded draft with calculations and a review checklist; no invented targets, cash savings, or automatic file generation. Record its section order and appearance as the baseline. Independently check 46/70 = 65.7% and 4,000 estimated annual hours.
+**Observe:** A draft based on the supplied evidence with calculations and a review checklist; no invented targets, cash savings, or automatic file generation. Record its section order and appearance as the baseline. Check that 46/70 = 65.7% and the estimated annual hours total 4,000.
 
 ### Manual addition 1 — store Markdown reporting conventions
 
@@ -379,7 +369,7 @@ Give me an empty reusable report template using your stored conventions.
 
 ### Manual addition 2 — offer PowerPoint or PDF after human review
 
-**Optional extension:** Complete this after the core exercise or as take-home work; file generation is not required during the 35-minute module. Apply all three edits together to remove the baseline's conflicting code prohibition and stopping rule. Save the complete addition before running the A/B/C tests below; partially applied edits are not a working Skill revision.
+**Optional extension:** Try this after the main exercise. You do not need to generate a file to complete the exercise. Apply all three edits together to remove the baseline's conflicting code prohibition and stopping rule. Save the complete addition before running the A/B/C tests below; partially applied edits are not a working Skill revision.
 
 **Edit A:** In `## Run one stage`, replace the entire bullet beginning **“Work conversationally with supplied material”** with:
 
@@ -519,7 +509,7 @@ I independently reviewed 2026-10-31 | DRAFT v1 against S1–S5 and its calculati
 Create the PowerPoint from that reviewed version.
 ```
 
-**Observe the change:** Compare with the PowerPoint from addition 2. The new artifact should use the stored red/white/gray palette without asking for it again. Check that the source values and qualifications are unchanged. Do not reattach Colors.png or mention the colors in the test prompt. Inspect the generated file—not just a textual claim of brand compliance. A visually matching output tests the stored conventions; it does not by itself prove the image resource was read, since the primary HEX values are also stored as text.
+**Observe the change:** Compare with the PowerPoint from addition 2. The new output should use the stored red/white/gray palette without asking for it again. Check that the source values and qualifications are unchanged. Do not reattach Colors.png or mention the colors in the test prompt. Check the generated file—not just a textual claim of brand compliance. A visually matching output tests the stored conventions; it does not by itself prove the image resource was read, since the primary HEX values are also stored as text.
 
 **Manual-edit checkpoint:** Your Skill should now have one `PRESENT` section, the revised code/stopping bullets, structured formatting, output structures, and brand formatting. The evidence challenge below is the final addition. Saved Skill instructions, the reporting run's evidence, and human review decisions remain separate.
 
@@ -528,17 +518,15 @@ Create the PowerPoint from that reviewed version.
 1. Confirm it is installed in the account/workspace you are using.
 2. Type `@` in a supported composer and select **PPI Reporting Assistant** from the picker. Use the actual matching entry, whose display name may differ.
 3. Add your run, requested stage, source content, expected output, and stop condition.
-4. Inspect any visible invocation indicator and the result's behavior. The model merely saying it used a Skill is not proof.
+4. Check any visible invocation indicator and the result's behavior. The model merely saying it used a Skill is not proof.
 
 `@PPI Reporting Assistant` in examples represents a **selected mention**, not a guaranteed literal handle. `S1` is a source ID, not a Skill. ChatGPT's documented explicit selection uses `@`; Codex CLI/IDE have different syntax. [Official invocation guidance](https://learn.chatgpt.com/docs/build-skills#how-codex-uses-skills)
 
 **No-Skills/Pro path:** Use the final exercise's RULES or the copied Skill body as ordinary instructions. Do not paste “Create a Skill” when you only want the workflow performed. Do not assume a Pro account has Enterprise's Skills interface. Both paths produce the same learning deliverable.
 
-**Instructor tip:** Within the seven-minute demonstration, use two minutes for the first two prompt comparisons, two for the formatting example, and three for Skill selection. Do not read every reference item aloud. If Skill setup takes more than two minutes during practice, switch to the plain-prompt path.
-
 ## Advanced challenge — require appropriate evidence before running
 
-**Optional take-home challenge or replacement for the existing intermediate extension; no extra workshop time.** Modify your own Skill and test it in fresh conversations. This section supplies instructions to apply; it does not change or install your account's Skill automatically.
+**Optional challenge:** Modify your own Skill and test it in fresh conversations. This section supplies instructions to apply; it does not change or install your account's Skill automatically.
 
 ### Goal: the user supplies the facts and controls progression
 
@@ -605,7 +593,7 @@ label them as configuration/help, not a completed reporting stage.
 
 **Avoid duplicate rules:** Paste this section once. If you previously added a `Required context check` section through chat, replace that whole section with this version rather than appending another one. No other section needs to be deleted. The stricter evidence requirement here applies to PRESENT as well as its reviewed-report and format requirements.
 
-This deliberately adds an evidence requirement to PRESENT as well as the existing reviewed-report requirement. A user saying “the report is correct” does not replace the required report, evidence, or version-specific human confirmation.
+This deliberately adds an evidence requirement to PRESENT as well as the existing reviewed-report requirement. A user saying “the report is correct” does not replace the required report, evidence, or human confirmation for the exact report version.
 
 **Short test after addition 4:** Start a fresh conversation with the updated Skill selected and **no evidence attached or pasted**:
 
@@ -625,7 +613,7 @@ Now run DRAFT using the supplied S1–S5. Stop for my review.
 
 ### Record the evolution
 
-| Saved revision | Short test | Expected behavior to inspect | Actual result / correction needed |
+| Saved revision | Short test | Expected behavior to check | Actual result / correction needed |
 |---|---|---|---|
 | Baseline | DRAFT using S1–S5 | Evidence-grounded draft and human review boundary | |
 | Addition 1 | Same DRAFT request | Stored Markdown section order, table, and unchecked review items | |
@@ -634,7 +622,7 @@ Now run DRAFT using the supplied S1–S5. Stop for my review.
 | Addition 3 | Reviewed version + PowerPoint request | Stored palette without reattaching image or restating colors | |
 | Addition 4 | DRAFT with no evidence, then valid evidence | Specific stop message, then recovery within requested stage | |
 
-Do not mark a check passed until you inspect the actual response or artifact. Record failures and revise the saved Skill before retesting. These participant checks have not been run against your account by this handout. All extension tests remain optional/take-home work within the existing timing arrangement.
+Do not mark a check passed until you check the actual response or output. Record failures and revise the saved Skill before retesting. These participant checks have not been run against your account by this handout. These are optional tests you can repeat on your own.
 
 ### Replicable tests — inappropriate and appropriate context
 
@@ -718,6 +706,8 @@ In a new conversation, supply the same card but omit E3. Request completion rate
 
 **Expected response:** Calculate the supported 60.0% completion rate; mark estimated annual hours **unavailable** and request the missing benefit evidence. Do not turn missing hours into zero. This demonstrates that the check prevents invention without blocking useful, supported work.
 
+**Remember:** These instructions help the Skill follow the workflow, but they cannot guarantee correct behavior. Test your changes and check the results yourself.
+
 ### Challenge acceptance checklist
 
 - [ ] Empty, irrelevant, and inaccessible evidence produces a specific “Not run” explanation.
@@ -730,22 +720,19 @@ In a new conversation, supply the same card but omit E3. Request completion rate
 
 **Record your test:** Request ____ · Actual behavior ____ · Expected behavior matched? ____ · Skill revision needed ____.
 
-**Instructor tip:** Ask participants to explain why the refusal is useful: it exposes a missing input and returns the next decision to the user. These are behavioral instructions to test, not a deterministic security boundary or a guarantee that a model cannot make mistakes. Fix the Skill and rerun failed cases before relying on it.
-
 ## Final exercise — build and run a reporting brief
 
 **Scenario:** Leadership needs a PPI update to choose next month's follow-up priorities. First establish usable context; do not jump directly to a polished report.
 
-**Time:** 15 minutes practice + 5 minutes comparison/save.  
 **Inputs:** Complete S1–S5 block above; optional reporting Skill.  
 **Deliverables:** Labeled context packet, INTAKE-v1, a reusable Markdown report outline named TEMPLATE-v1, and Skill name or “plain-prompt path.”
 
 ### Steps
 
-1. **3 minutes:** Copy S1–S5 and identify the brief, rules, evidence, and two limitations.
-2. **5 minutes:** Create/reuse and select the Skill, or use ordinary instructions. Allow at most two minutes for setup; use the remaining time to run intake.
-3. **4 minutes:** Check the inventory and use the continuation prompt to build TEMPLATE-v1 using Markdown notation.
-4. **3 minutes:** Inspect heading levels, table syntax, and unchecked review items with your partner; save the outputs for Module 3.
+1. Copy S1–S5 and identify the brief, rules, evidence, and two limitations.
+2. Create/reuse and select the Skill, or use ordinary instructions. If Skill setup is unavailable, paste the instructions and continue.
+3. Check the inventory and use the continuation prompt to build TEMPLATE-v1 using Markdown notation.
+4. Check heading levels, table syntax, and unchecked review items with your partner; save the outputs for Module 3.
 
 ### Comprehensive sample prompt
 
@@ -846,6 +833,4 @@ A suitable TEMPLATE-v1 preserves the supplied heading hierarchy, metadata, table
 
 For the formatting demonstration, the correct report shows **three** RTR initiatives awaiting validation, an unconfirmed calendar, and a proposed follow-up. No formatting choice should imply those initiatives are complete. If a response prints literal `##` markers instead of rendering them, check whether it is inside a code block; raw notation is correct for a template but not the requested report preview.
 
-**Instructor tip:** During comparison, ask one pair to explain how it referenced the Skill and another to demonstrate the fallback. Optional challenge within the same time: introduce a note claiming 48 completed and check that the conflicting count is surfaced, not silently accepted. Remove that test note before Module 3.
-
-**Handoff:** Save the packet, INTAKE-v1, TEMPLATE-v1 (the report outline), and reusable instructions. Break at 2:55; return at 3:15.
+**Handoff:** Save the packet, INTAKE-v1, TEMPLATE-v1 (the report outline), and reusable instructions. Keep these materials for Module 3.
