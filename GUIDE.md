@@ -10,14 +10,6 @@ Participants will use ChatGPT to turn supplied information into a concise manage
 
 Every output is assessed against the requirements' three standards: **Accurate**, **Easy to Understand**, and **Free from Errors**. AI-generated work remains a draft until a person has reviewed it. Passing a workshop checklist does not guarantee that a real business report is error-free.
 
-### Materials and source boundaries
-
-- [REQUIREMENTS.md](REQUIREMENTS.md) supplies the audience, objectives, module order, and exact schedule.
-- [Use-case PowerPoint](<Used Cases - Thermo Fisher.pptx>) supplies organizational context: CC&T/training (slide 4), internal communications (slides 6–7), PPI (slide 9 and appendix slides 13–16), and IT operations (slide 11). Slide numbers count from the beginning of the deck. Some substantive content is embedded as images.
-- [Colors.png](Colors.png) supplies the presentation palette. Module 5 translates it into practical design instructions.
-- The common exercise uses **invented PPI data**, not actual company performance. It is embedded in [Module 2's source packet](modules/Module02.md#copyable-source-packet), with stable source IDs S1–S5.
-- Each module is a shared instructor–participant handout with explanations, inappropriate/appropriate examples, workflow instructions, and a final exercise. Suggested answers follow each exercise under **Compare after completing**. They are readable in Markdown or print; there is no separate instructor edition.
-
 ## The workflow participants will build
 
 The workshop organizes context before asking for output. Participants keep four labeled parts: **BRIEF** (audience, decision, period, stage), **RULES** (reusable method), **SOURCES** (dated evidence), and **OUTPUTS** (versioned work and human review). A Skill can hold RULES; it does not replace current evidence or a human approval record.
