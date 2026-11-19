@@ -1,0 +1,42 @@
+SYNTHETIC WORKSHOP DATA — NOT THERMO FISHER RESULTS
+Case: Manila PPI portfolio update for a site leadership discussion.
+Reporting snapshot: 31 October 2026. All current figures below are cumulative
+portfolio figures at that date, not the number completed during October.
+Decision: which follow-up work should leadership prioritize next month?
+
+S1 — Current portfolio
+Function | Total initiatives | Completed | In progress | Awaiting validation | Estimated annual hours saved from completed initiatives
+RTR      | 20                | 12        | 5           | 3                   | 1200
+OTC      | 15                | 9         | 4           | 2                   | 600
+PTP      | 25                | 20        | 3           | 2                   | 1800
+Customer Care | 10           | 5         | 3           | 2                   | 400
+
+S2 — Definitions
+Each initiative appears once, in one function and one status.
+The three statuses are mutually exclusive and cover all initiatives.
+Completion rate = Completed / Total initiatives × 100.
+Portfolio completion rate = Total completed / Total initiatives × 100;
+do not use an unweighted average of function completion percentages.
+Hours are annualized estimates for completed initiatives, not hours already
+realized this month and not cash savings. Do not include open initiatives.
+No cost-per-hour, verified financial benefit, or performance target is supplied.
+
+S3 — Prior snapshot
+30 September 2026: same 70 initiatives, with no additions or removals;
+40 completed. Current and prior definitions are the same.
+No prior function-level completion counts or hours estimates are supplied.
+
+S4 — Qualitative notes
+Three RTR initiatives await process-owner validation of their evidence.
+The next month's review calendar has not been finalized.
+Customer Care has five completed initiatives out of ten; the reason for
+its completion rate has not been established.
+There is no evidence here that AI caused any completion or hours benefit.
+
+S5 — Reporting instructions
+Audience: site leadership. Use plain English and expand function acronyms
+on first use: Record to Report (RTR), Order to Cash (OTC), Procure to Pay (PTP).
+Proposed actions may suggest roles and timing, but label both as proposals.
+Do not present an unapproved action as a commitment or an existing decision.
+Round percentages to one decimal place after calculating with full precision.
+Retain the synthetic-data label, snapshot date, assumptions, and source IDs.
